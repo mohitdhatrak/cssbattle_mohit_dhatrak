@@ -4,6 +4,7 @@ import { HotKeys } from "react-hotkeys";
 
 // internal imports
 import "./App.css";
+import { getRandomConfig } from "./utils/confetti-config";
 
 export function App() {
     const keyMap = {
@@ -15,7 +16,8 @@ export function App() {
     };
 
     const blastConfetti = () => {
-        confetti();
+        const config = getRandomConfig();
+        confetti(config);
     };
 
     return (
