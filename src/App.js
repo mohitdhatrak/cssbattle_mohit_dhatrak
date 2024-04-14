@@ -9,7 +9,7 @@ import { getRandomConfig } from "./utils/confetti-config";
 
 export function App() {
     const keyMap = {
-        KEYS_SEQUENCE: "c s s b a t t l e",
+        KEYS_SEQUENCE: ["c s s b a t t l e", "C S S B A T T L E"],
     };
 
     const handlers = {
@@ -27,10 +27,11 @@ export function App() {
     const textRef = useRef(null);
 
     useEffect(() => {
-        // focus only working as expected when it changes from one element to another
-        // that is the reason why here I switch focus from hotkeys element to paragraph element
         hotkeysRef?.current?.focus();
         textRef?.current?.focus();
+        /* Focus only working as expected when it changes from one element to another,
+         that is the reason why here focus is switched from hotkeys element to paragraph element.
+         I have tried all others methods, focusing on just 1 element is not working. */
     }, []);
 
     return (
