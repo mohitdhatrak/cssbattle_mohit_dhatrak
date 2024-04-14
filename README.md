@@ -1,7 +1,7 @@
 ## Assignment project for CSSBattle
 
 ### Demo
-[Live project demo](https://cssbattle-task.netlify.app)
+<a href="https://cssbattle-task.netlify.app" target="_blank">Live project demo</a>
 
 ### Instructions
 To run the project locally, follow these steps:
